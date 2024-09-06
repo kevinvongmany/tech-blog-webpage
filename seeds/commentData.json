@@ -1,0 +1,22 @@
+[
+  {
+    "user_id": 1,
+    "post_id": 1,
+    "content": "I enjoy using MVC! It makes it easier to organize my code and keep it clean."
+  },
+  {
+    "user_id": 2,
+    "post_id": 1,
+    "content": "I'm not a fan of MVC so far, I find it restrictive and confusing!"
+  },
+  {
+    "user_id": 1,
+    "post_id": 2,
+    "content": "Clean code is so important--it makes it easier to work on projects with other developers."
+  },
+  {
+    "user_id": 2,
+    "post_id": 3,
+    "content": "I think the DRY principle is really useful, it helps me write cleaner code and save time."
+  }
+]
