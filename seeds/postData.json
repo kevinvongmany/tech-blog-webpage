@@ -1,14 +1,14 @@
 [
   {
     "title": "Why MVC is the best way to develop web applications",
-    "content": "MVC is a design pattern that separates an application into three main components: Model, View, and Controller. This separation of concerns makes it easier to maintain and test applications, as well as enabling multiple developers to work on the same project without stepping on each other's toes.",
+    "content": "MVC is a design pattern that separates an application into three main components: Model, View, and Controller. This separation of concerns makes it easier to maintain and test applications, as well as enabling multiple developers to work on the same project without stepping on each other's toes."
   },
   {
     "name": "Clean code and why it matters",
-    "description": "Clean code is code that is easy to read, understand, and maintain. It follows a set of principles that help developers write code that is less error-prone and easier to work with. In this article, we'll explore why clean code matters and how you can start writing cleaner code today.",
+    "description": "Clean code is code that is easy to read, understand, and maintain. It follows a set of principles that help developers write code that is less error-prone and easier to work with. In this article, we'll explore why clean code matters and how you can start writing cleaner code today."
   },
   {
     "name": "DRY principle and how it can help you write better code",
-    "description": "DRY stands for Don't Repeat Yourself, and it's a principle that encourages developers to write code that is reusable and modular. By following the DRY principle, you can reduce duplication in your codebase, making it easier to maintain and less error-prone.",
+    "description": "DRY stands for Don't Repeat Yourself, and it's a principle that encourages developers to write code that is reusable and modular. By following the DRY principle, you can reduce duplication in your codebase, making it easier to maintain and less error-prone."
   }
 ]
