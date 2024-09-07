@@ -37,8 +37,12 @@ router.get('/post/:id', async (req, res) => {
         },
         {
           model: Comment,
-          attributes: ['comment', 'date_created'],
-        },
+          attributes: ['comment', 'date_created', 'user_id'],
+          include: {
+            model: User,
+            attributes: ['name'],
+          },
+        }
       ],
     });
 
@@ -75,7 +79,7 @@ router.get('/dashboard', withAuth, async (req, res) => {
 router.get('/login', (req, res) => {
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
-    res.redirect('/');
+    res.redirect('/dashboard');
     return;
   }
 
