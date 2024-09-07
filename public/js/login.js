@@ -14,8 +14,8 @@ const loginFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      // If successful, redirect the browser to the dashboard page
-      document.location.replace('/dashboard');
+      // If successful, redirect the browser to the page before
+      window.history.back();
     } else {
       const invalidEl = document.getElementById('invalid-credentials');
       invalidEl.classList.remove('hidden');
