@@ -1,0 +1,55 @@
+<div class='flex-row justify-center items-center'>
+  <div class='bg-gray-700 p-6 m-3 w-9/12 rounded-sm shadow-xl'>
+    <h2 class='text-3xl mb-3 text-5'>
+      {{title}}
+    </h2>
+    <p class='mb-3'>{{content}}</p>
+    <p class='text-sm'>Created by
+      {{user.name}}
+      on
+      {{format_date date_created}}
+    </p>
+  </div>
+  <div>
+    <p>
+      {{description}}
+    </p>
+  </div>
+</div>
+<br />
+{{#each comments as |post|}}
+  <div class='flex-row justify-center items-center'>
+    <div class='bg-gray-300 p-6 m-3 w-9/12 rounded-sm shadow-xl text-black'>
+      <p>{{post.comment}}</p>
+      <p class='text-sm'>Created by
+        {{post.user.name}}
+        on
+        {{format_date post.date_created}}
+      </p>
+    </div>
+  </div>
+{{/each}}
+{{#if logged_in}}
+<div
+  class='flex-row justify-center items-center p-12 rounded-lg shadow-2xl w-full'
+>
+  <form class='form comment-form flex-col justify-center items-center w-9/12'>
+    <div class='form-group'>
+      <label for='comment'>Comment</label>
+      <textarea class='form-input resize-none' type='text' id='comment' rows="5" data-id="{{id}}"></textarea>
+    </div>
+    <div class='form-group py-5'>
+      <button class='btn btn-primary w-full' type='submit' >Post comment</button>
+    </div>
+  </form>
+  <div
+    id='invalid-comment'
+    class='hidden p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400'
+    role='alert'
+  >
+    <span class='font-medium'>Invalid comment!</span>
+    The comment could not be added, check your content and try again.
+  </div>
+</div>
+<script src='/js/comment.js'></script>
+{{/if}}
