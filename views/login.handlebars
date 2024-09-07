@@ -1,20 +1,30 @@
-<div class="flex-row justify-center items-center ">
-  <div class="flex-row justify-center items-center p-12 bg-gray-900 rounded-lg shadow-2xl">
-    <form class="form login-form flex-row">
-      <div class="form-group">
-        <label for="email-login">Email</label>
-        <input class="form-input" type="text" id="email-login" />
+<div class='flex-col justify-center items-center'>
+  <div
+    id='invalid-credentials'
+    class='hidden p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400'
+    role='alert'
+  >
+    <span class='font-medium'>Invalid credentials!</span>
+    The email or password you entered is incorrect or missing, try again.
+  </div>
+  <div
+    class='flex-row justify-center items-center p-12 bg-gray-900 rounded-lg shadow-2xl'
+  >
+    <form class='form login-form flex-row'>
+      <div class='form-group'>
+        <label for='email-login'>Email</label>
+        <input class='form-input' type='text' id='email-login' />
       </div>
-      <div class="form-group">
-        <label for="password-login">Password</label>
-        <input class="form-input" type="password" id="password-login" />
+      <div class='form-group'>
+        <label for='password-login'>Password</label>
+        <input class='form-input' type='password' id='password-login' />
       </div>
-      <div class="form-group py-5">
-        <button class="btn btn-primary" type="submit">Login</button>
+      <div class='form-group py-5'>
+        <button class='btn btn-primary' type='submit'>Login</button>
       </div>
-      <a href="/register" class="text-md">New account</a>
+      <a href='/register' class='text-md'>New account</a>
     </form>
   </div>
 </div>
 
-<script src="./js/login.js"></script>
+<script src='./js/login.js'></script>
