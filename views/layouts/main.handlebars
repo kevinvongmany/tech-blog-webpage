@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang='en'>
   <head>
     <meta charset='UTF-8' />
@@ -10,57 +9,70 @@
       cursor:["disabled"] } } }
     </script>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-..."
-      crossorigin="anonymous"
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css'
+      integrity='sha512-...'
+      crossorigin='anonymous'
     />
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link
+      href='https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css'
+      rel='stylesheet'
+    />
     <link rel='preconnect' href='https://fonts.googleapis.com' />
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
     <link
       href='https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap'
       rel='stylesheet'
     />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/jass.css" /> 
-    <link rel="stylesheet" href="/css/style.css" /> 
+    <link
+      href='https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'
+      rel='stylesheet'
+    />
+    <link rel='stylesheet' href='/css/jass.css' />
+    <link rel='stylesheet' href='/css/style.css' />
   </head>
 
   <body class='bg-gray-600'>
-    <div class='flex-row justify-center items-center text-white text-2xl no-underline w-full '>
+    <div
+      class='flex-row justify-center items-center text-white text-2xl no-underline w-full'
+    >
       <header class='flex justify-around bg-gray-800 suse-font w-full border-b'>
         <div class='flex-row p-6 ml-6 text-4xl w-1/2'>
-          <h1 class="mx-5">
+          <h1 class='mx-5'>
             <a href='/'>Tech Blog</a>
           </h1>
-          <h1 class="mx-5">
+          <h1 class='mx-5'>
             <a href='/dashboard'>Dashboard</a>
           </h1>
         </div>
         <nav class='p-6 mr-6'>
           <!-- Conditionally render login or logout links -->
           {{#if logged_in}}
-          <button class='no-button' id='logout'>logout</button>
+            <button class='no-button' id='logout'>logout</button>
           {{else}}
-          <a href='/login'>login</a>
+            <a href='/login'>login</a>
           {{/if}}
         </nav>
       </header>
       <main class='my-5'>
         <!-- Render the sub layout -->
-        {{{ body }}}
+        {{{body}}}
       </main>
-      <footer class="flex justify-center items-center w-full h-20">
-        <a href="https://github.com/kevinvongmany" class="flex justify-center items-center">
-          <p class="text-xl pr-3">github.com/kevinvongmany</p>
-          <i class="fab fa-github"></i>
+      <footer class='flex justify-center items-center w-full h-20'>
+        <a
+          href='https://github.com/kevinvongmany'
+          class='flex justify-center items-center'
+        >
+          <p class='text-xl pr-3'>github.com/kevinvongmany</p>
+          <i class='fab fa-github'></i>
         </a>
       </footer>
     </div>
     {{#if logged_in}}
-    <script src='/js/logout.js'></script>
+      <script src='/js/logout.js'></script>
     {{/if}}
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <script
+      src='https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js'
+    ></script>
   </body>
 </html>
