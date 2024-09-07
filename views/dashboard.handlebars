@@ -10,18 +10,30 @@
         on
         {{format_date post.date_created}}</p>
     </div>
-    <div class=''>
-      <p>
-        {{post.description}}
-      </p>
+    <div>
+      <button
+        class='bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded'
+        data-id='{{post.id}}'
+      >
+        X
+      </button>
     </div>
   </div>
 {{/each}}
+  <div
+    id='invalid-delete'
+    class='hidden p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400'
+    role='alert'
+  >
+    <span class='font-medium'>Delete unsuccessful!</span>
+  </div>
 <div class='flex-row justify-center items-center mt-5'>
   <button
     class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
     id='add-post'
   >
-    Add New Post
+    
+    <a href="/addpost">Add New Post</a>
   </button>
 </div>
+<script src='/js/delete.js'></script>
