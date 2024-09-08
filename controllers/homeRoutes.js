@@ -96,6 +96,7 @@ router.get('/updatepost/:id', withAuth, async (req, res) => {
     return;
   }
   try {
+    // also if the id does not belong to the user, redirect the request to another route
     const postData = await Post.findByPk(req.params.id, {
       include: [
         {
@@ -104,7 +105,10 @@ router.get('/updatepost/:id', withAuth, async (req, res) => {
         },
       ],
     });
-
+    if (req.session.user_id !== postData.user_id) {
+      res.redirect('/dashboard');
+      return;
+    }
     const post = postData.get({ plain: true });
 
     res.render('updatepost', {
