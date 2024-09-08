@@ -66,11 +66,28 @@ To use this application, access your newly started server (http://localhost:3001
 
 https://tech-blog-webpage.onrender.com/dashboard
 
-- View existing blog posts on the homepage
-- Register for an account
-- Login to your account
-- Create, update or delete your own blog posts
-- Leave comments on other blog posts
+### View existing blog posts on the homepage
+
+![Image of homepage](docs/techblog_homepage.png)
+
+### Register for an account
+
+![Registration page](docs/techblog_register.png)
+
+### Login to your account
+
+![Login page](docs/techblog_login.png)
+
+### Create, update or delete your own blog posts
+
+![Dashboard page](docs/techblog_dashboard.png)
+![Creating a post](docs/techblog_addpost.png)
+![Updating an post](docs/techblog_updatepost.png)
+
+### Leave comments on other blog posts
+
+![Adding a comment to a blog post](docs/techblog_addcomment.png)
+![Post page with comment](docs/techblog_post.png)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
